@@ -1,0 +1,194 @@
+﻿/* Ejercicio 2: Estilo para el body */
+body {
+    background-color: #eaf2e3;
+    color: blue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wrapper to push footer to the bottom */
+.wrapper {
+    flex: 1;
+}
+
+/* Ejercicio 3: Selector de clase */
+.content {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Ejercicio 5: Nuevos estilos semánticos */
+header {
+    background: linear-gradient(90deg,#0e5f75, #000000, #1f416e,#000000);
+    background-size: 600% 600%;
+    animation: gradient-animation 6s ease infinite;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    justify-content: center;
+}
+
+/* Estilo específico para el logoheader */
+.logoheader {
+    width: 90px; 
+    height: auto; 
+    border: none; 
+    position: absolute;
+    left: 30px; 
+    top: 10px; 
+    z-index: 999; 
+}
+
+/* Estilo para el texto "Bienvenidos a Nuestra Empresa" */
+header h1 {
+    color: #fff; 
+    margin: 0;
+    font-size: 1.5em; 
+    text-align: center;
+    margin-top: 60px; 
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: linear-gradient(90deg, #0e5f75, #000000, #1f416e,#000000);
+    background-size: 600% 600%;
+    animation: gradient-animation 6s ease infinite;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-icon {
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+    transition: transform 0.3s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2); 
+}
+
+/* Estilo para el texto del footer */
+.footer-text {
+    color: white; 
+    text-align: center; 
+}
+
+/* Ejercicio 6: Estilos para nav */
+nav {
+    background: linear-gradient(90deg, #ff3300, #3000003a, #201d25);
+    background-size: 600% 600%;
+    animation: gradient-animation 6s ease infinite;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #000000, #305668, #201d25);
+    background-size: 600% 600%;
+    animation: gradient-animation 4s ease infinite;
+    transition: background 0.5s ease;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, #ff0606, #4caf50, #552199);
+    background-size: 600% 600%;
+    animation: gradient-animation 4s ease infinite;
+}
+
+/* Ejercicio 6: Estilos para las imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 3px solid #69bd45;
+    border-radius: 10px;    
+}
+
+/* Estilos para el contenido */
+.content {
+    margin-bottom: 20px;
+}
+
+
+/* Animación para el gradiente */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Media queries para hacer el diseño responsive */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.2em; 
+    }
+    .logoheader {
+        left: 10px; 
+    }
+}
+
+/* Media queries adicionales */
+@media only screen and (max-width: 600px) {
+    .footer-icon {
+        width: 40px;  
+        height: 40px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logoheader {
+        width: 70px; 
+    }
+}
+
